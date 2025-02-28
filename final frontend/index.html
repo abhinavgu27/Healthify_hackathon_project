@@ -1,0 +1,1833 @@
+<!DOCTYPE html><html><head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <meta name="description" content="A professional platform for healthcare management, offering secure access to patient records and real-time updates for doctors.">
+  <title>Secure Healthcare Management System for Doctors and Patients</title>
+  <link rel="stylesheet" href="css/mobirise2.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/jarallax.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/floating-wpp.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style_1.css">
+  <link rel="stylesheet" href="css/recaptcha.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobirisePromo.container-banner {
+  height: 11rem;
+  opacity: 1;
+  -webkit-animation: 11s linear animationHeight;
+  -moz-animation: 11s linear animationHeight;
+    -o-animation: 11s linear animationHeight;
+       animation: 11s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobirisePromo.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobirisePromo .banner {
+  min-height: 11rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 11s linear animationBanner;
+  -moz-animation: 11s linear animationBanner;
+    -o-animation: 11s linear animationBanner;
+       animation: 11s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobirisePromo .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobirisePromo .buy-license {
+  text-decoration: underline;
+}
+#mobirisePromo .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+#mobirisePromo .mbr-section-abuse-report {
+  margin-top: 0.8rem;
+  font-size: 80%;
+}
+#mobirisePromo .mbr-section-abuse-report a {
+  color: #aaa;
+}
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+
+@-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 575px) {
+  #mobirisePromo.container-banner {
+    height: 14rem;
+  }
+  #mobirisePromo .banner {
+    min-height: 14rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+<div c
+    </div>
+  </div>
+</div>
+  
+  <section data-bs-version="5.1" class="menu menu01 progressm5 cid-uE35SxDb4u" once="menu" id="menu-1-uE35SxDb4u">
+
+    
+
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="menu_box container-fluid">
+            <div class="navbar-brand d-flex">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption display-2" href="#"><span class="mobi-mbri mobi-mbri-users mbr-iconfont mbr-iconfont-btn"></span>Healthify</a></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link display-4" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link display-4" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link display-4" href="#">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link display-4" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="mbr-section-btn-main" role="tablist">
+                    <a class="btn btn-primary display-4" href="http://localhost:5173/">Get Started</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="header02 progressm5 cid-uE35SxF8LH mbr-fullscreen mbr-parallax-background" id="hero-2-uE35SxF8LH">
+	
+
+	
+	<div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(0, 20, 34);"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="content-wrapper">
+					<h1 class="mbr-section-title mbr-fonts-style display-1"><strong>Secure Healthcare</strong></h1>
+					<div class="desc-wrapper">
+						<p class="mbr-desc mbr-fonts-style display-7">Your health data, your control, your peace of mind.</p>
+					</div>
+					<div class="text-wrapper">
+						<p class="mbr-text mbr-fonts-style display-2">Join the future of healthcare management with our secure, doctor-focused platform. Access patient records relevant to your specialty.</p>
+					</div>
+					<div class="mbr-section-btn">
+						<a class="btn btn-primary display-4" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="contacts01 progressm5 cid-uE35SxG68L" id="map-1-uE35SxG68L">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&q=Ghaziabad%20India" allowfullscreen=""></iframe></div>
+            </div>
+            
+            
+            </div>
+        </div>
+    
+</section>
+
+<section data-bs-version="5.1" class="article01 progressm5 cid-uE35SxH7DR" id="generic-text-1-uE35SxH7DR">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="mbr-section-title mbr-fonts-style display-2">Why Choose Healthify?</h2>
+                        <div class="text-wrapper">
+                            <p class="mbr-text mbr-fonts-style display-4">Our platform offers unparalleled security and privacy for doctors. Access only the records you need, when you need them, all at no cost. It's healthcare made easy!</p>
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="images/photo-1612531385476-a86dc00daf9a.jpeg" alt="">
+                    </div>
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-secondary display-4" href="#">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features07 progressm5 cid-uE35SxHXg3" id="features-5-uE35SxHXg3">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <div class="desc-wrapper">
+                        <p class="mbr-desc mbr-fonts-style display-4">Key Features</p>
+                    </div>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Why Healthify Rocks</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Experience a seamless integration of technology and healthcare with our innovative features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+						<div class="item-img">
+							<div class="image-wrap">
+                                <img src="images/photo-1612531385446-f7e6d131e1d0.jpeg" alt="">
+							</div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Connect Wallet</h4>
+                                <p class="item-text mbr-fonts-style display-4">Authenticate securely with Connect Wallet. Your data is safe, and only you control access to your records. No more password headaches!</p>
+                            </div>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1739298061768-41a8a7d8b38f.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Specialty Access</h4>
+                                <p class="item-text mbr-fonts-style display-4">Doctors see only what they need. No more irrelevant data cluttering your view. Focus on what matters most—your patients!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features08 progressm5 cid-uE35SxIMzn" id="features-6-uE35SxIMzn">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <div class="desc-wrapper">
+                        <p class="mbr-desc mbr-fonts-style display-4">More Benefits</p>
+                    </div>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Additional Perks</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Healthify is designed to make your life easier and your practice more efficient.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1559839734-2b71ea197ec2.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Real-Time Updates</h4>
+                                <p class="item-text mbr-fonts-style display-4">Stay informed with real-time patient updates. No more waiting for information—get it as it happens!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1579154392128-bf8c7ebee541.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Document Security</h4>
+                                <p class="item-text mbr-fonts-style display-4">Manage documents securely and effortlessly. Your sensitive information is protected with top-notch security measures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                               <img src="images/photo-1739289696456-823ef234a417.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Cost-Free Access</h4>
+                                <p class="item-text mbr-fonts-style display-4">Enjoy all these features at no cost. Yes, you read that right—zero dollars for doctors!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features06 progressm5 cid-uE35SxJN1y" id="features-4-uE35SxJN1y">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">How It Works</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Getting started is a breeze! Here’s how you can join us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-content">
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont socicon-google socicon"></span>
+                            </a>
+                        </div>
+                        <h4 class="item-title mbr-fonts-style display-4">Sign Up</h4>
+                        <p class="item-text mbr-fonts-style display-4">Create your account in minutes. It’s quick and easy!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-content">
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont socicon-amazon socicon"></span>
+                            </a>
+                        </div>
+                        <h4 class="item-title mbr-fonts-style display-4">Connect Wallet</h4>
+                        <p class="item-text mbr-fonts-style display-4">Authenticate your identity securely with our Connect Wallet feature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-content">
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont socicon-apple socicon"></span>
+                            </a>
+                        </div>
+                        <h4 class="item-title mbr-fonts-style display-4">Access Records</h4>
+                        <p class="item-text mbr-fonts-style display-4">View only the patient records relevant to your specialty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="header01 mbr-embla progressm5 cid-uE35SxK3cz" id="hero-1-uE35SxK3cz">
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/photo-1576091160501-bbe57469278b.jpeg" alt="">
+                    </div>
+                    <h1 class="mbr-section-title mbr-fonts-style display-1">Join Healthify</h1>
+                    <div class="slider-wrapper">
+                        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="4" data-draggable="true">
+                            <div class="embla__viewport">
+                                <div class="embla__container">
+                                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img  item-number">
+                                                        <img src="images/photo-1484981138541-3d074aa97716.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="text-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-4">Secure</h4>
+                                                        <p class="item-text mbr-fonts-style display-4">Your data is safe with us.</p>
+                                                    </div>
+                                                    <div class="icon-wrapper">
+                                                        <a href="#">
+                                                            <span class="mobi-mbri mobi-mbri-share mbr-iconfont"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img  item-number">
+                                                        <img src="images/photo-1615665071170-3cafd93531f5.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="text-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-4">Efficient</h4>
+                                                        <p class="item-text mbr-fonts-style display-4">Streamlined access to patient records.</p>
+                                                    </div>
+                                                    <div class="icon-wrapper">
+                                                        <a href="#">
+                                                            <span class="mobi-mbri mobi-mbri-share mbr-iconfont"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img  item-number">
+                                                        <img src="images/photo-1612276529731-4b21494e6d71.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="text-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-4">Free</h4>
+                                                        <p class="item-text mbr-fonts-style display-4">All features at no cost to doctors.</p>
+                                                    </div>
+                                                    <div class="icon-wrapper">
+                                                        <a href="#">
+                                                            <span class="mobi-mbri mobi-mbri-share mbr-iconfont"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="embla__button embla__button--prev">
+                                <span class="mobi-mbri mobi-mbri-left mbr-iconfont" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden visually-hidden visually-hidden">Previous</span>
+                            </button>
+                            <button class="embla__button embla__button--next">
+                                <span class="mobi-mbri mobi-mbri-right mbr-iconfont" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden visually-hidden visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-2">Transform your practice with Healthify today!</p>
+                    </div>
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary display-4" href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="tabs01 tabs progressm5 cid-uE35SxLYGC" id="features-9-uE35SxLYGC">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row items-wrapper">
+            <div class="col-12 col-lg-4 card">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-5">Core Features of Our System</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 card">
+                <div class="tabs-wrapper">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item first mbr-fonts-style">
+                            <a class="nav-link show active mbr-fonts-style display-4" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tab1" aria-selected="true">Security</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link show active mbr-fonts-style display-4" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#tab2" aria-selected="true">Access</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#features-9-uE35SxLYGC_tab2" aria-selected="true">Updates</a></li>
+                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-4" role="tab" data-toggle="tab" data-bs-toggle="tab" href="#features-9-uE35SxLYGC_tab3" aria-selected="true">Management</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 card">
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane in active" role="tabpanel">
+                        <div class="content-wrapper">
+                            <div class="text-wrapper">
+                                <p class="item-text mbr-fonts-style display-7">Connect Wallet authentication ensures your data is locked tighter than a drum. Only authorized personnel can peek at the records, keeping your information safe and sound.</p>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="images/photo-1614579093341-d1b1f97e8a75.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane" role="tabpanel">
+                        <div class="content-wrapper">
+                            <div class="text-wrapper">
+                                <p class="item-text mbr-fonts-style display-7">Doctors can access only disease-specific records, ensuring they see what matters most. No more sifting through irrelevant data—just the good stuff!</p>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="images/photo-1612943680768-d82060323fd5.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane" role="tabpanel">
+                        <div class="content-wrapper">
+                            <div class="text-wrapper">
+                                <p class="item-text mbr-fonts-style display-7">Get real-time updates on patient conditions. No more waiting around; stay in the loop and provide timely care like a superhero in scrubs!</p>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="images/photo-1616851273103-5f0ec44e546f.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab-pane" role="tabpanel">
+                        <div class="content-wrapper">
+                            <div class="text-wrapper">
+                                <p class="item-text mbr-fonts-style display-7">Manage documents securely and effortlessly. Say goodbye to paper chaos and hello to organized digital bliss!</p>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="images/photo-1576091160550-2173dba999ef.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="slider01 mbr-embla progressm5 cid-uE35SxQjdN" id="features-10-uE35SxQjdN">
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="mbr-section-title mbr-fonts-style display-2">How It Works</h2>
+                        <div class="text-wrapper">
+                            <p class="mbr-text mbr-fonts-style display-4">Our system is designed for simplicity and efficiency. Here’s how you can get started and make the most of our features!</p>
+                        </div>
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play-interval="4" data-draggable="true">
+                            <div class="embla__viewport">
+                                <div class="embla__container">
+                                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-content">
+                                                    <h4 class="item-title mbr-fonts-style display-5">Step 1: Sign Up Today!</h4>
+                                                </div>
+                                                <div class="item-img item-number">
+                                                    <div class="item-wrap item-number">
+                                                        <img src="images/photo-1612943733919-f9661f1331f5.jpeg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-content">
+                                                    <h4 class="item-title mbr-fonts-style display-5">Step 2: Connect Your Wallet</h4>
+                                                </div>
+                                                <div class="item-img item-number">
+                                                    <div class="item-wrap item-number">
+                                                        <img src="images/photo-1527613426441-4da17471b66d.jpeg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-content">
+                                                    <h4 class="item-title mbr-fonts-style display-5">Step 3: Access Patient Records</h4>
+                                                </div>
+                                                <div class="item-img item-number">
+                                                    <div class="item-wrap item-number">
+                                                        <img src="images/photo-1612349317150-e413f6a5b16d.jpeg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="embla__button embla__button--prev">
+                                <span class="mobi-mbri mobi-mbri-left mbr-iconfont" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden visually-hidden visually-hidden">Previous</span>
+                            </button>
+                            <button class="embla__button embla__button--next">
+                                <span class="mobi-mbri mobi-mbri-right mbr-iconfont" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden visually-hidden visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features10 progressm5 cid-uE35SxTVyn" id="features-8-uE35SxTVyn">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-content">
+                        <h4 class="item-title mbr-fonts-style display-5">Secure Access</h4>
+                        <p class="item-text mbr-fonts-style display-4">Your data is protected with top-notch security measures. Only authorized users can access sensitive information. No peeking allowed!</p>
+                    </div>
+                    <div class="item-img">
+                        <div class="image-wrap">
+                            <img src="images/photo-1612523138351-4643808db8f3.jpeg" alt="">
+                        </div>
+                        <div class="mbr-section-btn">
+                            <a class="btn btn-primary display-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-content">
+                        <h4 class="item-title mbr-fonts-style display-5">Privacy First</h4>
+                        <p class="item-text mbr-fonts-style display-4">We prioritize patient privacy. Doctors only see what they need to see—nothing more, nothing less.</p>
+                    </div>
+                    <div class="item-img">
+                        <div class="image-wrap">
+                            <img src="images/photo-1612636321938-2a60d4febfae.jpeg" alt="">
+                        </div>
+                        <div class="mbr-section-btn">
+                            <a class="btn btn-primary display-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features04 progressm5 cid-uE35SxUd3T" id="features-3-uE35SxUd3T">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <div class="desc-wrapper">
+                        <p class="mbr-desc mbr-fonts-style display-4">Features</p>
+                    </div>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Why Choose Us?</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Your trusted partner in healthcare management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="icon-wrap">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-cloud mobi-mbri"></span>
+                            </a>
+                        </div>
+                        <div class="item-content">
+                            <div class="text-wrap">
+                                <h4 class="item-title mbr-fonts-style display-4">User-Friendly</h4>
+                                <p class="item-text mbr-fonts-style display-4">Easy Navigation</p>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="icon-wrap">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-cloud mobi-mbri"></span>
+                            </a>
+                        </div>
+                        <div class="item-content">
+                            <div class="text-wrap">
+                                <h4 class="item-title mbr-fonts-style display-4">Real-Time</h4>
+                                <p class="item-text mbr-fonts-style display-4">Instant Updates</p>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="icon-wrap">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-cloud mobi-mbri"></span>
+                            </a>
+                        </div>
+                        <div class="item-content">
+                            <div class="text-wrap">
+                                <h4 class="item-title mbr-fonts-style display-4">Secure</h4>
+                                <p class="item-text mbr-fonts-style display-4">Data Protection</p>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="mbr-section-btn">
+                    <a class="btn btn-primary display-4" href="http://localhost:5173/">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article03 progressm5 cid-uE35SxVa5L" id="call-to-action-1-uE35SxVa5L">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row items-wrapper">
+            <div class="col-12 col-lg-6 card">
+                <div class="content-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="mbr-section-title mbr-fonts-style display-2">Join Us Today!</h2>
+                        <div class="text-wrapper">
+                            <p class="mbr-text mbr-fonts-style display-4">Don’t miss out on the future of healthcare management. Sign up now and experience the difference! Your patients deserve the best, and so do you!</p>
+                        </div>
+                        <div class="mbr-section-btn">
+                            <a class="btn btn-primary display-4" href="#">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 card">
+                <div class="image-wrapper">
+                    <img src="images/photo-1612276529418-52e6ad86ee1d.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features01 progressm5 cid-uE35SxWsiT" id="product-list-1-uE35SxWsiT">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Pricing Plans</h2>
+                    <div class="text-wrapper">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+						<div class="item-img">
+							<div class="image-wrap">
+                                <img src="images/photo-1579154341140-5aa3a445d43b.jpeg" alt="">
+							</div>
+							<div class="number-wrap">
+								<p class="item-number mbr-fonts-style display-7">$0</p>
+							</div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Free Plan</h4>
+                                <p class="item-text mbr-fonts-style display-4">Absolutely no cost for doctors. Enjoy all features without spending a dime!</p>
+                                <div class="mbr-section-btn">
+                                <a class="btn btn-primary display-4" href="#">Get Started</a>
+                            </div>
+                            </div>
+						</div>
+                        
+					</div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+						<div class="item-img">
+							<div class="image-wrap">
+                                <img src="images/photo-1614579093335-b6ab37ddaace.jpeg" alt="">
+							</div>
+							<div class="number-wrap">
+								<p class="item-number mbr-fonts-style display-7">$0</p>
+							</div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Free Plan</h4>
+                                <p class="item-text mbr-fonts-style display-4">Same great features, no hidden fees. Just pure healthcare goodness!</p>
+                                <div class="mbr-section-btn">
+                                <a class="btn btn-primary display-4" href="#">Get Started</a>
+                            </div>
+                            </div>
+						</div>
+                        
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="slider02 mbr-embla progressm5 cid-uE35SxXB0S" id="features-11-uE35SxXB0S">
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="title-wrapper">
+                        <div class="desc-wrapper">
+                            <p class="mbr-desc mbr-fonts-style display-4">Our Key Features</p>
+                        </div>
+                        <h2 class="mbr-section-title mbr-fonts-style display-2">What We Offer</h2>
+                        <div class="text-wrapper">
+                            <p class="mbr-text mbr-fonts-style display-4">Our platform is packed with features designed to make your life easier. From secure access to real-time updates, we’ve got you covered!</p>
+                        </div>
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play-interval="4" data-draggable="true">
+                            <div class="embla__viewport">
+                                <div class="embla__container">
+                                    <div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img">
+                                                    <img src="images/photo-1615177393579-5fc7431152c9.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="title-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-7">Secure Authentication</h4>
+                                                    </div>
+                                                    <div class="text-wrap">
+                                                        <p class="item-text mbr-fonts-style display-4">Connect Wallet for secure access. Your data is safe with us!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img">
+                                                    <img src="images/photo-1521790361543-f645cf042ec4.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="title-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-7">Specialty Access</h4>
+                                                    </div>
+                                                    <div class="text-wrap">
+                                                        <p class="item-text mbr-fonts-style display-4">Doctors see only relevant records. Privacy is our priority!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img">
+                                                    <img src="images/photo-1612636320854-776180f479d8.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="title-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-7">Instant Notifications</h4>
+                                                    </div>
+                                                    <div class="text-wrap">
+                                                        <p class="item-text mbr-fonts-style display-4">Stay updated with real-time alerts. No more waiting!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img">
+                                                    <img src="images/photo-1579154491781-5e199df316aa.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="title-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-7">Document Control</h4>
+                                                    </div>
+                                                    <div class="text-wrap">
+                                                        <p class="item-text mbr-fonts-style display-4">Manage documents securely. Say goodbye to paper clutter!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
+                                        <div class="slide-content">
+                                            <div class="item-wrapper">
+                                                <div class="item-img">
+                                                    <img src="images/photo-1612636322033-f48f76c34bab.jpeg" alt="">
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="title-wrap">
+                                                        <h4 class="item-title mbr-fonts-style display-7">User Support</h4>
+                                                    </div>
+                                                    <div class="text-wrap">
+                                                        <p class="item-text mbr-fonts-style display-4">Our support team is here for you. We’ve got your back!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="embla__button embla__button--prev">
+                                <span class="mobi-mbri mobi-mbri-left mbr-iconfont" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden visually-hidden visually-hidden">Previous</span>
+                            </button>
+                            <button class="embla__button embla__button--next">
+                                <span class="mobi-mbri mobi-mbri-right mbr-iconfont" aria-hidden="true"></span>
+                                <span class="sr-only visually-hidden visually-hidden visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary display-4" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="list01 progressm5 cid-uE35SxZJLZ" id="faq-1-uE35SxZJLZ">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row items-wrapper">
+            <div class="col-12 col-lg-6 card">
+                <div class="content-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="mbr-section-title mbr-fonts-style display-2">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 card">
+                <div id="bootstrap-accordion_15" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_15" aria-expanded="false" aria-controls="collapse1">
+                                <h4 class="panel-title-edit mbr-fonts-style display-7">Is there a cost involved?</h4>
+                                <div class="icon-wrapper">
+                                    <span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapse1_15" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_15">
+                            <div class="panel-body">
+                                <p class="panel-text mbr-fonts-style display-4">Nope! Our platform is completely free for doctors. Enjoy all the features without any hidden fees. We believe in making healthcare management accessible to everyone!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_15" aria-expanded="false" aria-controls="collapse2">
+                                <h4 class="panel-title-edit mbr-fonts-style display-7">How secure is my data?</h4>
+                                <div class="icon-wrapper">
+                                    <span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapse2_15" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_15">
+                            <div class="panel-body">
+                                <p class="panel-text mbr-fonts-style display-4">Your data is protected with top-notch security measures. We take privacy seriously and ensure only authorized users can access sensitive information.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_15" aria-expanded="false" aria-controls="collapse3">
+                                <h4 class="panel-title-edit mbr-fonts-style display-7">Can I access records remotely?</h4>
+                                <div class="icon-wrapper">
+                                    <span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapse3_15" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_15">
+                            <div class="panel-body">
+                                <p class="panel-text mbr-fonts-style display-4">Absolutely! Our system is designed for remote access, allowing you to view patient records from anywhere, anytime. Stay connected!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingFour">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_15" aria-expanded="false" aria-controls="collapse4">
+                                <h4 class="panel-title-edit mbr-fonts-style display-7">What if I need help?</h4>
+                                <div class="icon-wrapper">
+                                    <span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapse4_15" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_15">
+                            <div class="panel-body">
+                                <p class="panel-text mbr-fonts-style display-4">Our support team is always ready to assist you. Whether you have questions or need guidance, we’re just a click away!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image01 progressm5 cid-uE35Sy0kok mbr-parallax-background" id="image-1-uE35Sy0kok">
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 20, 34);"></div>
+
+    <div class="container">
+        <div class="row content-wrapper">
+            <div class="col-12">
+                <div class="image-wrap"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features09 progressm5 cid-uE35Sy0jbl" id="features-7-uE35Sy0jbl">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Core Features</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Transforming Healthcare Management Today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1576091160399-112ba8d25d1d.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Secure Wallet Access</h4>
+                            </div>
+                        </div>
+                        <div class="mbr-section-btn">
+                            <a class="btn btn-primary display-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1612943705904-e2e101abcd19.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Specialty Records Access</h4>
+                            </div>
+                        </div>
+                        <div class="mbr-section-btn">
+                            <a class="btn btn-primary display-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1612531385476-a86dc00daf9a.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Real-Time Updates</h4>
+                            </div>
+                        </div>
+                        <div class="mbr-section-btn">
+                            <a class="btn btn-primary display-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features03 progressm5 cid-uE35Sy1olf" id="features-2-uE35Sy1olf">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <div class="desc-wrapper">
+                        <p class="mbr-desc mbr-fonts-style display-4">How It Works</p>
+                    </div>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Streamlined Patient Management</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Our system ensures doctors access only relevant patient records, enhancing privacy and efficiency in healthcare delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-content">
+                            <div class="icon-wrapper-main">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-success mobi-mbri"></span>
+                                </a>
+                            </div>
+                            <div class="text-wrap">
+                                <p class="item-desc mbr-fonts-style display-4">Access</p>
+                                <h4 class="item-title mbr-fonts-style display-7">Patient Records</h4>
+                                <p class="item-text mbr-fonts-style display-4">Only see what you need to know.</p>
+                            </div>
+                        </div>
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-content">
+                            <div class="icon-wrapper-main">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-success mobi-mbri"></span>
+                                </a>
+                            </div>
+                            <div class="text-wrap">
+                                <p class="item-desc mbr-fonts-style display-4">Updates</p>
+                                <h4 class="item-title mbr-fonts-style display-7">Real-Time Info</h4>
+                                <p class="item-text mbr-fonts-style display-4">Stay informed with instant notifications.</p>
+                            </div>
+                        </div>
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-content">
+                            <div class="icon-wrapper-main">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-success mobi-mbri"></span>
+                                </a>
+                            </div>
+                            <div class="text-wrap">
+                                <p class="item-desc mbr-fonts-style display-4">Secure</p>
+                                <h4 class="item-title mbr-fonts-style display-7">Document Management</h4>
+                                <p class="item-text mbr-fonts-style display-4">Safeguard sensitive information effortlessly.</p>
+                            </div>
+                        </div>
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="video01 progressm5 cid-uE35Sy2jFl" id="video-2-uE35Sy2jFl">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row content-wrapper">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Watch Our Demo</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Experience the future of healthcare management with our innovative system. See how easy it is to manage patient records securely and efficiently, all while keeping your focus on what truly matters—patient care.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10">
+                 <div class="mbr-figure col-12 mb-5 col-md-"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/Mw2pkuANrKA?rel=0&mute=1&showinfo=0&autoplay=1&loop=1&playlist=Mw2pkuANrKA" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe></div>
+            </div>
+            <div class="col-12">
+                <div class="desc-wrapper">
+                    <p class="mbr-desc mbr-fonts-style display-4">A quick overview of our platform's capabilities.</p>
+                </div>
+                <div class="mbr-section-btn">
+                    <a class="btn btn-secondary display-4" href="#">Watch Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery01 cid-uE35Sy3ZqZ" id="gallery-1-uE35Sy3ZqZ">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head">
+          
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="images/photo-1612531385446-f7e6d131e1d0.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/photo-1739298061768-41a8a7d8b38f.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/photo-1559839734-2b71ea197ec2.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/photo-1579154392128-bf8c7ebee541.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery01 cid-uE35Sy4aSL" id="gallery-2-uE35Sy4aSL">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head">
+          
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="images/photo-1739289696456-823ef234a417.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/photo-1576091160501-bbe57469278b.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/photo-1484981138541-3d074aa97716.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="images/photo-1615665071170-3cafd93531f5.jpeg" alt="">>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="features05 progressm5 cid-uE35Sy4jmm" id="blog-2-uE35Sy4jmm">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Latest Insights</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1612276529731-4b21494e6d71.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-4">Secure Healthcare Management System for Doctors and Patients</h4>
+                                <p class="item-text mbr-fonts-style display-4">Why secure access is non-negotiable in healthcare. Protecting patient data is not just a requirement; it's a responsibility we all share.</p>
+                            </div>
+                        </div>
+                        <div class="date-wrapper">
+                            <p class="item-date mbr-fonts-style display-4">2025-02-28</p>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1614579093341-d1b1f97e8a75.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-4">Secure Healthcare Management System for Doctors and Patients</h4>
+                                <p class="item-text mbr-fonts-style display-4">Real-time updates can save lives. Learn how timely information can make a difference in patient care.</p>
+                            </div>
+                        </div>
+                        <div class="date-wrapper">
+                            <p class="item-date mbr-fonts-style display-4">2025-02-20</p>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img">
+                            <div class="image-wrap">
+                                <img src="images/photo-1612943680768-d82060323fd5.jpeg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-4">Secure Healthcare Management System for Doctors and Patients</h4>
+                                <p class="item-text mbr-fonts-style display-4">Navigating the maze of healthcare regulations. Stay compliant without losing your mind.</p>
+                            </div>
+                        </div>
+                        <div class="date-wrapper">
+                            <p class="item-date mbr-fonts-style display-4">2025-02-15</p>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mbr-iconfont mobi-mbri-share mobi-mbri"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="mbr-section-btn">
+                    <a class="btn btn-primary display-4" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image01 progressm5 cid-uE35Sy5j6L mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/K24V8kkP_GQ?autoplay=1&loop=1&playlist=K24V8kkP_GQ&t=20&mute=1&playsinline=1&controls=0&showinfo=0&autohide=1&allowfullscreen=true&mode=transparent" id="video-3-uE35Sy5j6L">
+    
+
+    <div class="mbr-fallback-image disabled"></div>
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 20, 34);"></div>
+
+    <div class="container">
+        <div class="row content-wrapper">
+            <div class="col-12">
+                <div class="image-wrap"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features02 progressm5 cid-uE35Sy667X" id="blog-1-uE35Sy667X">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Latest Updates</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img item-number">
+                            <img src="images/photo-1616851273103-5f0ec44e546f.jpeg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="text-wrap">
+                                <p class="item-date mbr-fonts-style display-4">Feb 20, 2025</p>
+                                <p class="item-text mbr-fonts-style display-4">New features for doctors unveiled!</p>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mobi-mbri mobi-mbri-share mbr-iconfont"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+                        <div class="item-img item-number">
+                            <img src="images/photo-1576091160550-2173dba999ef.jpeg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="text-wrap">
+                                <p class="item-date mbr-fonts-style display-4">Feb 15, 2025</p>
+                                <p class="item-text mbr-fonts-style display-4">Patient privacy is our priority.</p>
+                            </div>
+                            <div class="icon-wrapper">
+                                <a href="#">
+                                    <span class="mobi-mbri mobi-mbri-share mbr-iconfont"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features01 progressm5 cid-uE35Sy6gIw" id="features-1-uE35Sy6gIw">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Core Features</h2>
+                    <div class="text-wrapper">
+                        <p class="mbr-text mbr-fonts-style display-4">Our system offers unparalleled security, tailored access, and real-time updates, all at zero cost for healthcare professionals. Experience the future of medical management today!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+						<div class="item-img">
+							<div class="image-wrap">
+                                <img src="images/photo-1612943733919-f9661f1331f5.jpeg" alt="">
+							</div>
+							<div class="number-wrap">
+								<p class="item-number mbr-fonts-style display-4">
+									01
+								</p>
+							</div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Secure Access</h4>
+                                <p class="item-text mbr-fonts-style display-4">Connect Wallet authentication ensures only authorized personnel access sensitive patient records, keeping data safe and sound.</p>
+                            </div>
+						</div>
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                            </a>
+                        </div>
+					</div>
+                </div>
+            </div>
+            <div class="item features-image col-12 col-lg-6">
+                <div class="item-wrapper">
+                    <div class="item-wrap">
+						<div class="item-img">
+							<div class="image-wrap">
+                                 <img src="images/photo-1527613426441-4da17471b66d.jpeg" alt="">
+							</div>
+							<div class="number-wrap">
+								<p class="item-number mbr-fonts-style display-4">
+									02
+								</p>
+							</div>
+                            <div class="item-content">
+                                <h4 class="item-title mbr-fonts-style display-7">Real-Time Updates</h4>
+                                <p class="item-text mbr-fonts-style display-4">Stay informed with instant notifications about patient status changes, ensuring timely and effective care.</p>
+                            </div>
+						</div>
+                        <div class="icon-wrapper">
+                            <a href="#">
+                                <span class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+                            </a>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article02 progressm5 cid-uE35Sy7KdX" id="generic-text-2-uE35Sy7KdX">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row items-wrapper">
+            <div class="col-12 col col-lg-6">
+                <div class="text-wrapper">
+                    <p class="mbr-text mbr-fonts-style display-5">Our Healthcare Management System is designed for efficiency and security. With a focus on user experience, we provide a seamless interface that allows healthcare professionals to manage patient records with ease and confidence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form01 progressm5 cid-uE35Sy7Dz3" id="contact-form-1-uE35Sy7Dz3">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="image-wrapper">
+                        <img src="images/photo-1612349317150-e413f6a5b16d.jpeg" alt="">
+                    </div>
+                    <div class="content-wrap">
+                        <div class="title-wrapper">
+                            <h2 class="mbr-section-title mbr-fonts-style display-2">Get In Touch</h2>
+                            <div class="text-wrapper">
+                                <p class="mbr-text mbr-fonts-style display-4">We'd love to hear from you!</p>
+                            </div>
+                        </div>
+                        <div class="mbr-form form-wrapper" data-form-type="formoid">
+                            <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="ELurqz2nHEHFjvq5l3hunIWU+5HZ62hBfGzafEDLUB3ZdKV2+U7c98Ts8SHxw6QqdGafFGjA5NNWv5kjPKWeQBuB3MIgkW/QJ+Xhi9UI4T87JoZYT4JMspZCYkxYH2Rp">
+                                <div class="row">
+                                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks
+                                        for
+                                        filling out the form!</div>
+                                    <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                                        Oops...! some problem!
+                                    </div>
+                                </div>
+                                <div class="dragArea row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="text">
+                                        <input type="text" name="text" placeholder="Name" data-form-field="text" class="form-control display-4" value="" id="text-contact-form-1-uE35Sy7Dz3">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 mb-3 mb-3 mb-3 mb-3" data-for="email">
+                                        <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control display-4" value="" id="email-contact-form-1-uE35Sy7Dz3">
+                                    </div>
+                                    <div class="col mbr-section-btn"><button type="submit" class="btn btn-primary display-4">Submit Inquiry</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts01 progressm5 cid-uE35Sy8JhT" id="contacts-3-uE35Sy8JhT">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                 <h2 class="mbr-section-title mbr-fonts-style display-2">Contact Us</h2>
+            </div>
+            
+            <div class="col-12 col-lg-6">
+                <div class="list-wrapper">
+                    <ul class="list mbr-fonts-style display-7">
+                        <li class="item-wrap">+91 9856854748</li>
+                        <li class="item-wrap">support@healthcaremgmt.com</li>
+                        <li class="item-wrap">Sector-43,Ghaziabad,India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                   <div class="social-wrapper">
+                       <div class="social-wrap">
+                           <div class="soc-item">
+                               <a href="#">
+                                   <span class="mbr-iconfont socicon socicon-facebook"></span>
+                               </a>
+                           </div>
+                           <div class="soc-item">
+                               <a href="#">
+                                   <span class="mbr-iconfont socicon socicon-instagram"></span>
+                               </a>
+                           </div>
+                           <div class="soc-item">
+                               <a href="#">
+                                   <span class="mbr-iconfont socicon socicon-linkedin"></span>
+                               </a>
+                           </div>
+                           <div class="soc-item">
+                               <a href="#">
+                                   <span class="mbr-iconfont socicon socicon-youtube"></span>
+                               </a>
+                           </div>
+                           <div class="soc-item">
+                               <a href="#">
+                                   <span class="mbr-iconfont socicon socicon-github"></span>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    
+</section>
+
+<section data-bs-version="5.1" class="footer01 progressm5 cid-uE35Sy9C7f" once="footers" id="footer-1-uE35Sy9C7f">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+               
+            </div>
+            <div class="col-12">
+                
+            </div>
+        </div>
+        <div class="row items-wrapper">
+            
+            
+            
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+                <p class="mbr-copy mbr-fonts-style display-4">© 2025 Healthcare Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jarallax.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/navbar-dropdown.js"></script>
+  <script src="js/floating-wpp.js"></script>
+  <script src="js/script_1.js"></script>
+  <script src="js/embla.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/mbr-tabs.js"></script>
+  <script src="js/mbr-switch-arrow.js"></script>
+  <script src="js/scroll-gallery.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/script_2.js"></script>
+  <script src="js/formoid.min.js"></script>
+  
+  
+  
+<div id="chatbutton-wa" data-phone="+918630111841" data-showpopup="true" data-headertitle="👋 Chat with us on WhatsApp!" data-popupmessage="Hi!👋
+
+Type a message here. It will go straight to our phone! 🔥
+" data-placeholder="Type here" data-position="left" data-headercolor="#39847a" data-backgroundcolor="#e5ddd5" data-autoopentimeout="5" data-size="65px"><div class="floating-wpp-button" style="width: 65px; height: 65px;"><div class="floating-wpp-button-image"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 800 800" width="65" height="65"><defs><clipPath id="_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ"><rect width="800" height="800"></rect></clipPath></defs><g clip-path="url(#_clipPath_A3g8G5hPEGG2L0B6hFCxamU4cc8rfqzQ)"><g><path d=" M 787.59 800 L 12.41 800 C 5.556 800 0 793.332 0 785.108 L 0 14.892 C 0 6.667 5.556 0 12.41 0 L 787.59 0 C 794.444 0 800 6.667 800 14.892 L 800 785.108 C 800 793.332 794.444 800 787.59 800 Z " fill="rgb(37,211,102)"></path></g><g><path d=" M 508.558 450.429 C 502.67 447.483 473.723 433.24 468.325 431.273 C 462.929 429.308 459.003 428.328 455.078 434.22 C 451.153 440.114 439.869 453.377 436.434 457.307 C 433 461.236 429.565 461.729 423.677 458.78 C 417.79 455.834 398.818 449.617 376.328 429.556 C 358.825 413.943 347.008 394.663 343.574 388.768 C 340.139 382.873 343.207 379.687 346.155 376.752 C 348.804 374.113 352.044 369.874 354.987 366.436 C 357.931 362.999 358.912 360.541 360.875 356.614 C 362.837 352.683 361.857 349.246 360.383 346.299 C 358.912 343.352 347.136 314.369 342.231 302.579 C 337.451 291.099 332.597 292.654 328.983 292.472 C 325.552 292.301 321.622 292.265 317.698 292.265 C 313.773 292.265 307.394 293.739 301.996 299.632 C 296.6 305.527 281.389 319.772 281.389 348.752 C 281.389 377.735 302.487 405.731 305.431 409.661 C 308.376 413.592 346.949 473.062 406.015 498.566 C 420.062 504.634 431.03 508.256 439.581 510.969 C 453.685 515.451 466.521 514.818 476.666 513.302 C 487.978 511.613 511.502 499.06 516.409 485.307 C 521.315 471.55 521.315 459.762 519.842 457.307 C 518.371 454.851 514.446 453.377 508.558 450.429 Z  M 401.126 597.117 L 401.047 597.117 C 365.902 597.104 331.431 587.661 301.36 569.817 L 294.208 565.572 L 220.08 585.017 L 239.866 512.743 L 235.21 505.332 C 215.604 474.149 205.248 438.108 205.264 401.1 C 205.307 293.113 293.17 205.257 401.204 205.257 C 453.518 205.275 502.693 225.674 539.673 262.696 C 576.651 299.716 597.004 348.925 596.983 401.258 C 596.939 509.254 509.078 597.117 401.126 597.117 Z  M 567.816 234.565 C 523.327 190.024 464.161 165.484 401.124 165.458 C 271.24 165.458 165.529 271.161 165.477 401.085 C 165.46 442.617 176.311 483.154 196.932 518.892 L 163.502 641 L 288.421 608.232 C 322.839 627.005 361.591 636.901 401.03 636.913 L 401.126 636.913 L 401.127 636.913 C 530.998 636.913 636.717 531.2 636.77 401.274 C 636.794 338.309 612.306 279.105 567.816 234.565" fill-rule="evenodd" fill="rgb(255,255,255)"></path></g></g></svg></div></div></div>
+ 
+
+</body></html>
